@@ -11,6 +11,9 @@ def index():
 def about():
     return render_template("about.html")
 
+@app.route('/chart')
+def chart():
+    return render_template("chart.html")
 
 if __name__=="__main__":
     app.run(debug=True)
