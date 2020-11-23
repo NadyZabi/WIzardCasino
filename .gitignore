@@ -1,0 +1,12 @@
+# Ignore IDE's files
+.idea/
+
+# ignore virtual env
+venv/
+
+# dotenv environment variables file
+.env
+
+# System Files
+.DS_Store
+Thumbs.db
