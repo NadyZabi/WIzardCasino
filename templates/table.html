@@ -27,49 +27,19 @@
 
   <div>
     <table>
-      <caption>TABLE 12 (AM. ROULETTE) - THURSDAY, 01.08.2019</caption>
+      <caption>TABLE 4 (AM. ROULETTE) - WEDNESDAY, 04.09.2019</caption>
        <tr>
-        <th>Time</th>
-        <th>Black</th>
-        <th class="zero">Zero</th>
-        <th class="red">Red</th>
+         {% for header in headings %}
+         <th>{{header}}</th>
+         {% endfor %}
        </tr>
+       {% for row in data %}
        <tr>
-        <td>15:00:14</td>
-        <td></td>
-        <td></td>
-        <td>21</td>
-      </tr>
-      <tr>
-       <td>15:01:42</td>
-       <td>10</td>
-       <td></td>
-       <td></td>
-     </tr>
-     <tr>
-      <td>15:03:24</td>
-      <td></td>
-      <td></td>
-      <td>5</td>
-    </tr>
-    <tr>
-     <td>15:05:14</td>
-     <td></td>
-     <td></td>
-     <td>16</td>
-   </tr>
-   <tr>
-    <td>15:07:24</td>
-    <td></td>
-    <td></td>
-    <td>12</td>
-  </tr>
-  <tr>
-   <td>15:08:41</td>
-   <td></td>
-   <td>0</td>
-   <td></td>
- </tr>
+         {% for cell in row %}
+         <td>{{ cell }}</td>
+         {% endfor %}
+       </tr>
+       {% endfor %}
      </table>
 </div>
 </body>
