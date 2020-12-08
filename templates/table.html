@@ -25,15 +25,15 @@
     website of Spiel Bank in Duisburg.
   </p>
 
-  <div>
-    <table>
+  <div class="table_div">
+    <table class="scroll_table">
       <caption>TABLE 4 (AM. ROULETTE) - WEDNESDAY, 04.09.2019</caption>
        <tr>
          {% for header in headings %}
          <th>{{header}}</th>
          {% endfor %}
        </tr>
-       {% for row in data %}
+       {% for index, row in data.iterrows() %}
        <tr>
          {% for cell in row %}
          <td>{{ cell }}</td>

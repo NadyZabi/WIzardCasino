@@ -21,21 +21,7 @@ def chart():
 # Table parametres
 
 headings = ('Time','Black','Zero','Red')
-"""
-data = pd.read_csv("data.csv", sep=',', header=None, index_col=False)
-
-#for row in data.iterrows():
-#    print(row)
-
-print(data)
-"""
-data = (
-    ('00:38:25','','0',''),
-    ('00:37:38','15','',''),
-    ('00:36:48','','','32'),
-    ('00:35:56','','','18'),
-    ('00:34:27','','','7')
-)
+data = pd.read_csv('data.csv', sep=";")
 
 @app.route('/table')
 def table():
