@@ -3,22 +3,23 @@ import numpy as np
 import jinja2
 
 df = pd.read_csv('data.csv', sep=";")
-#print(df.head())
-
-#name = 'Nadya'
-#tm = jinja2.Template('Hellow {{ name }}')
-#msg = tm.render(name=name)
-
-#print(msg)
-
-#for row in df.iterrows():
-#    for cell in row:
-#        msg = tm.render(name=cell)
-#        print(msg)
 
 
-#for row in df.iterrows():
-    #print(row)
-for index, row in df.iterrows():
-    for cell in row:
-        print(cell)
+#print(list(df.count().keys())[1:])
+#print(df.count().values.tolist()[1:])
+
+# Freq distribution
+#arr = pd.array(df['Black'],dtype=pd.Int64Dtype())
+arr = df['Black'].values.tolist()
+
+#s = pd.Series(arr, dtype='Int64')
+#print(s)
+
+
+#print("Raw data: ", arr, "Agg data: ", exc_int(arr))
+s = df['Black'].str.split('\.').str[0]
+df['Black'] = pd.to_numeric(s, errors='coerce').astype('Int64')
+print(df['Black'].values)
+
+
+# Count number freq
