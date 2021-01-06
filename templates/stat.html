@@ -37,15 +37,25 @@
               data: {
                   labels:{{ labels | safe }} ,
               datasets: [{
-                label: 'Color distribution',
+                label: 'Numbers distribution',
                 backgroundColor: 'rgb(3, 218, 197)',
                 borderColor: 'rgb(255, 99, 132)',
                 data: {{ val }}
+
       }]
   },
 
   // Configuration options go here
-  options: {}
+  options:{
+            scales: {
+                yAxes : [{
+                    ticks : {
+                        max : 5,
+                        min : 0
+                    }
+                }]
+            }
+        }
   });
     </script>
     </canvas>
