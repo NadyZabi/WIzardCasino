@@ -1,3 +1,3 @@
 init:
 	python3 -m venv env
-	pip install -r requirements.txt
+	env/bin/pip install -r requirements.txt
