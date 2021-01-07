@@ -1,0 +1,35 @@
+body, div {
+  color: #e9ecef;
+  background-color: #495057;
+}
+
+h5 {
+  color:#f8f9fa;
+}
+
+h6 {
+  text-align:center;
+}
+
+.scroll_table {
+   width:300px;
+   height: 50px;
+   margin: 70px 60px 45px;
+   overflow: auto;
+ }
+
+.table_div {
+  height: 150px
+}
+
+h4 {
+  margin-left: 20px;
+}
+
+p {
+  margin-left: 20px;
+  margin-top: 5%;
+}
+
+
+tr:hover {background-color: #f5f5f5;}
