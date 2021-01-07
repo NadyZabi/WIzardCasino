@@ -1,5 +1,6 @@
 # Ignore IDE's files
 .idea/
+__pycache__/
 
 # ignore virtual env
 venv/
